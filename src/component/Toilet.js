@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import React from 'react'
 import './toilet.css'
@@ -7,6 +7,7 @@ import './toilet.css'
 import { GrRotateRight } from 'react-icons/gr'
 
 const Toilet = () => {
+  //   useEffect
   const [status1, setStatus1] = useState()
   const [status2, setStatus2] = useState()
   const [status3, setStatus3] = useState()
@@ -70,7 +71,7 @@ const Toilet = () => {
       } else if (data.status === 1) {
         setStatus3('there is someone in room3')
         let newData = new Date(data.datetime)
-        setTime3(newData.getTime())
+        newData.getTime()
         console.log(Date(time3).toString())
       }
     })
@@ -85,49 +86,49 @@ const Toilet = () => {
       {/* 
       <h1>Toilet</h1>
       <h1>Average estimated time: HH:MM</h1>
-      <div class="toilet-card">
-          <div class="card-header"></div>
-          <div class="card-body">
+      <div className="toilet-card">
+          <div className="card-header"></div>
+          <div className="card-body">
               <img src="https://cdn.discordapp.com/attachments/941214299160993822/941945726156554290/toilet-5.png" alt="image" />
-              <h3 class="toilet-room">Room1</h3>
-              <p class="time-display">Begin time: HH.MM</p>
-              <p class="estimatetime-display">Estimated end time: HH.MM</p>
+              <h3 className="toilet-room">Room1</h3>
+              <p className="time-display">Begin time: HH.MM</p>
+              <p className="estimatetime-display">Estimated end time: HH.MM</p>
           </div>
       </div>
-      <div class="toilet-card">
-          <div class="card-header"></div>
-          <div class="card-body">
+      <div className="toilet-card">
+          <div className="card-header"></div>
+          <div className="card-body">
               <img src="https://cdn.discordapp.com/attachments/941214299160993822/941945725875539968/toilet-4.png" alt="image" />
-              <h3 class="toilet-room">Room2</h3>
-              <p class="empty-room">Empty!</p>
-              <p class="estimatetime-display">Estimated end time: HH.MM</p>
+              <h3 className="toilet-room">Room2</h3>
+              <p className="empty-room">Empty!</p>
+              <p className="estimatetime-display">Estimated end time: HH.MM</p>
           </div>
       </div>
-      <div class="toilet-card">
-          <div class="card-header"></div>
-          <div class="card-body">
+      <div className="toilet-card">
+          <div className="card-header"></div>
+          <div className="card-body">
               <img src="https://cdn.discordapp.com/attachments/941214299160993822/941945726156554290/toilet-5.png" alt="image" />
-              <h3 class="toilet-room">Room3</h3>
-              <p class="time-display">Begin time: HH.MM</p>
-              <p class="estimatetime-display">Estimated end time: HH.MM</p>
+              <h3 className="toilet-room">Room3</h3>
+              <p className="time-display">Begin time: HH.MM</p>
+              <p className="estimatetime-display">Estimated end time: HH.MM</p>
           </div>
       </div> */}
 
       <h1>TOILET</h1>
 
       {/* <h1>Average estimated time: HH:MM</h1> */}
-      <div class="toilet-list">
-        <div class="toilet-card">
-          <div class="card-header"></div>
-          <div class="card-body">
+      <div className="toilet-list">
+        <div className="toilet-card">
+          <div className="card-header"></div>
+          <div className="card-body">
             <img
               src="https://cdn.discordapp.com/attachments/941214299160993822/941954703003123742/toilet-6.png"
               alt="image"
             />
-            <h3 class="toilet-room">ROOM 1</h3>
-            <p class="time-display">{status1}</p>
+            <h3 className="toilet-room">ROOM 1</h3>
+            <p className="time-display">{status1}</p>
             {time1 && 'Begin Time:' + time1}
-            <p class="estimatetime-display">Estimated end time: HH.MM</p>
+            <p className="estimatetime-display">Estimated end time: HH.MM</p>
             <form onSubmit={onRefresh1}>
               <button>
                 <GrRotateRight />
@@ -135,17 +136,17 @@ const Toilet = () => {
             </form>
           </div>
         </div>
-        <div class="toilet-card">
-          <div class="card-header"></div>
-          <div class="card-body">
+        <div className="toilet-card">
+          <div className="card-header"></div>
+          <div className="card-body">
             <img
               src="https://cdn.discordapp.com/attachments/941214299160993822/941954703284113408/toilet-7.png"
               alt="image"
             />
-            <h3 class="toilet-room">ROOM 2</h3>
-            <p class="empty-room">{status2}</p>
+            <h3 className="toilet-room">ROOM 2</h3>
+            <p className="empty-room">{status2}</p>
             {time2 && 'Begin Time:' + time2}
-            <p class="estimatetime-display">Estimated end time: HH.MM</p>
+            <p className="estimatetime-display">Estimated end time: HH.MM</p>
             <form onSubmit={onRefresh2}>
               <button>
                 <GrRotateRight />
@@ -153,17 +154,17 @@ const Toilet = () => {
             </form>
           </div>
         </div>
-        <div class="toilet-card">
-          <div class="card-header"></div>
-          <div class="card-body">
+        <div className="toilet-card">
+          <div className="card-header"></div>
+          <div className="card-body">
             <img
               src="https://cdn.discordapp.com/attachments/941214299160993822/941954703003123742/toilet-6.png"
               alt="image"
             />
-            <h3 class="toilet-room">ROOM 3</h3>
-            <p class="time-display">{status3}</p>
+            <h3 className="toilet-room">ROOM 3</h3>
+            <p className="time-display">{status3}</p>
             {time3 && 'Begin Time:' + time3}
-            <p class="estimatetime-display">Estimated end time: HH.MM</p>
+            <p className="estimatetime-display">Estimated end time: HH.MM</p>
             <form onSubmit={onRefresh3}>
               <button>
                 <GrRotateRight />
