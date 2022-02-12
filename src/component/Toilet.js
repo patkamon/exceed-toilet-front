@@ -5,7 +5,6 @@ import React from 'react'
 import './toilet.css'
 
 import { GrRotateRight } from 'react-icons/gr'
-import { format } from 'date-fns'
 
 const Toilet = () => {
   const [status1, setStatus1] = useState()
@@ -29,10 +28,7 @@ const Toilet = () => {
     )
     return res.data
   }
-  // function convertToSec(time){
-  //   let timeToSec = ParseInt(time.slice(0,2))
-  //   Date
-  // }
+
   function onRefresh1(e) {
     getRoom(1).then((data) => {
       if (data.status === 0) {
@@ -73,9 +69,8 @@ const Toilet = () => {
         setTime3()
       } else if (data.status === 1) {
         setStatus3('there is someone in room3')
-        // setTime3(data.datetime.getTime())
-        let data2 = new Date(data.datetime)
-        setTime3(data2.getTime())
+        let newData = new Date(data.datetime)
+        setTime3(newData.getTime())
         console.log(Date(time3).toString())
       }
     })
@@ -184,6 +179,9 @@ const Toilet = () => {
             <h3 class="toilet-room">ROOM 3</h3>
             <p class="time-display">{status3}</p>
             {time3 && 'Begin Time:' + time3}
+            <form onSubmit={onRefresh1}>
+              <button>button1 </button>
+            </form>
             {/* <p class="time-display">{time3}</p> */}
             <p class="estimatetime-display">Estimated end time: HH.MM</p>
           </div>
