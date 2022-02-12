@@ -11,11 +11,10 @@ const Toilet = () => {
 
 
   return (
-    <div>Toilet
+    <div>
 
 
 
- <button><GrRotateRight /></button> 
 
 {/* 
       <h1>Toilet</h1>
@@ -52,13 +51,15 @@ const Toilet = () => {
 
   <h1>TOILET</h1>
 
+  <button class="button small"><GrRotateRight /></button> 
   {/* <h1>Average estimated time: HH:MM</h1> */}
   <div class="toilet-list">
       
       <div class="toilet-card">
           <div class="card-header"></div>
           <div class="card-body">
-              <img src="https://cdn.discordapp.com/attachments/941214299160993822/941954703003123742/toilet-6.png" alt="image" />
+              <img src="https://cdn.discordapp.com/attachments/761848868034969640/941982932090892289/toilet-12.png" alt="image" />
+              {/* <div classname={'time-display' $ {}}></div> */}
               <h3 class="toilet-room">ROOM 1</h3>
               <p class="time-display">DO NOT DISTURB</p>
               <p class="time-display">Begin time: HH.MM</p>
@@ -68,7 +69,8 @@ const Toilet = () => {
       <div class="toilet-card">
           <div class="card-header"></div>
           <div class="card-body">
-              <img src="https://cdn.discordapp.com/attachments/941214299160993822/941954703284113408/toilet-7.png" alt="image" />
+              <img src="https://cdn.discordapp.com/attachments/761848868034969640/941982592213860352/toilet-11.png" alt="image" />
+  
               <h3 class="toilet-room">ROOM 2</h3>
               <p class="empty-room">EMPTY ROOM</p>
               <p class="estimatetime-display">Estimated end time: HH.MM</p>
@@ -77,7 +79,7 @@ const Toilet = () => {
       <div class="toilet-card">
           <div class="card-header"></div>
           <div class="card-body">
-              <img src="https://cdn.discordapp.com/attachments/941214299160993822/941954703003123742/toilet-6.png" alt="image" />
+              <img src="https://cdn.discordapp.com/attachments/761848868034969640/941982932090892289/toilet-12.png n " alt="image" />
               <h3 class="toilet-room">ROOM 3</h3>
               <p class="time-display">DO NOT DISTURB</p>
               <p class="time-display">Begin time: HH.MM</p>
