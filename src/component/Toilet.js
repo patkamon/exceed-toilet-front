@@ -47,7 +47,12 @@ const Toilet = () => {
           </div>
       </div> */}
 
-
+<div class="topnav">
+  <a class="active" href="#home">Check your toilet !</a>
+  {/* <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a> */}
+</div>
 
   <h1>TOILET</h1>
 
@@ -79,7 +84,7 @@ const Toilet = () => {
       <div class="toilet-card">
           <div class="card-header"></div>
           <div class="card-body">
-              <img src="https://cdn.discordapp.com/attachments/761848868034969640/941982932090892289/toilet-12.png n " alt="image" />
+              <img src="https://cdn.discordapp.com/attachments/761848868034969640/941982932090892289/toilet-12.png" alt="image" />
               <h3 class="toilet-room">ROOM 3</h3>
               <p class="time-display">DO NOT DISTURB</p>
               <p class="time-display">Begin time: HH.MM</p>
