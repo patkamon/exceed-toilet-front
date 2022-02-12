@@ -9,10 +9,10 @@ const Toilet = () => {
     console.log('hello')
     return res.data
   }
-  function refresh() {
-    window.location.reload()
-    getDataFromRoom(1)
-  }
+  //   function refresh() {
+  //     window.location.reload()
+  //     getDataFromRoom(1)
+  //   }
   useEffect(() => {
     // setInterval(refresh, 10000)
     // getDataFromRoom(1).then((data) => {
@@ -20,7 +20,7 @@ const Toilet = () => {
     // })
     setInterval(getDataFromRoom(1), 3000)
   }, [])
-  let num = 0
+  //   let num = 0
   //   function checkStatus(status){
   //       if(status === 0) // empty
 
