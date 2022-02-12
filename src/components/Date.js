@@ -1,14 +1,20 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Date = () => {
+  //   const [count, setCount] = useState(0)
   function test() {
     console.log('hello')
   }
   useEffect(() => {
-    setInterval(test, 1000)
+    setInterval(test, 5000)
   }, [])
-  //   setInterval(test, 1000)
-  return <div>Date</div>
+
+  return (
+    <div>
+      Date
+      {/* {count} */}
+    </div>
+  )
 }
 
 export default Date
