@@ -1,0 +1,113 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Kanit:wght@100;200;300;400;500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,900;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Prompt:wght@100;200;300;400;500;600&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap");
+* {
+  margin: 100;
+  padding: 0;
+  box-sizing: content-box;
+  color: black;
+  background-color: #ebd46d;
+  font-family: "Rowdies", cursive;
+  /* text-transform: uppercase;
+    margin: 0;
+    font-weight: 1700;
+    text-align: center;
+    font-size: 10; */
+
+  /* background-color: rgb(248, 244, 239); */
+}
+
+h1 {
+  color: black;
+  font-size: 500%;
+  font-family: "Rowdies", cursive;
+  /* font-weight: 700; */
+}
+h3 {
+  background-color: #ebd46d;
+  color: black;
+  font-size: 200%;
+  font-family: "Rowdies", cursive;
+  /* font-weight: 700; */
+}
+
+p {
+  background-color: #ebd46d;
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.toilet-list {
+  padding: 2rem;
+  display: grid;
+  gap: 1.5rem;
+
+  grid-template-columns: auto auto auto auto;
+}
+
+.toilet-card {
+  background-color: #ebd46d;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 20px;
+  /* padding-bottom: 10%;
+    color: #000; */
+  /* overflow: hidden; */
+  margin: 10px;
+}
+
+.card-header {
+  height: 80px;
+  border-bottom: 1px solid #ebd46d;
+  background-color: rgb(110, 74, 27);
+}
+
+.card-header-red {
+  height: 80px;
+  border-bottom: 1px solid #ebd46d;
+  background-color: rgb(107, 35, 35);
+}
+
+.card-body {
+  background-color: #ebd46d;
+  text-align: center;
+  padding: auto;
+}
+
+.card-body img {
+  background-color: rgb(200, 209, 243);
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 10%;
+  margin-top: -50px;
+}
+
+.toilet-room {
+  margin-top: 1rem 1;
+  color: rgb(74, 121, 182);
+  font-size: larger;
+}
+
+.time-display {
+  margin: 1rem 1;
+  color: rgb(240, 68, 62);
+  font-size: large;
+}
+
+.empty-room {
+  color: green;
+  font-size: large;
+}
+
+.estimatetime-display {
+  font-size: medium;
+}
+
+button {
+  font-size: 100%;
+  background: white;
+  padding: 0;
+  border: none;
+  background: none;
+}
