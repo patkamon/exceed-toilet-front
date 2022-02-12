@@ -179,15 +179,15 @@ const Toilet = () => {
             <p class="time-display">{status1}</p>
             {time1 && 'Begin Time:' + time1}
             {time1 && 'Estimate Time:' + time3 + ' + ' + parseInt(es) + ' second'} 
-            
-
-          </div>
-        </div>
-        <form onSubmit={onRefresh1}>
+            <form onSubmit={onRefresh1}>
               <button>
                 <GrRotateRight />
               </button>
             </form>
+
+          </div>
+        </div>
+       
 
 
         <div class="toilet-card">
