@@ -82,29 +82,6 @@ const Toilet = () => {
 
   return (
     <div>
-      <form onSubmit={onRefresh1}>
-        <button>button1 </button>
-      </form>
-
-      <form onSubmit={onRefresh2}>
-        <button>button2 </button>
-      </form>
-
-      <form onSubmit={onRefresh3}>
-        <button>button3 </button>
-      </form>
-
-      {/* {status1}
-      {status2}
-      {status3}
-      {time1}
-      {time2}
-      {time3} */}
-
-      <button>
-        <GrRotateRight />
-      </button>
-
       {/* 
       <h1>Toilet</h1>
       <h1>Average estimated time: HH:MM</h1>
@@ -150,9 +127,12 @@ const Toilet = () => {
             <h3 class="toilet-room">ROOM 1</h3>
             <p class="time-display">{status1}</p>
             {time1 && 'Begin Time:' + time1}
-            {/* <p class="time-display">{time1}</p> */}
-
             <p class="estimatetime-display">Estimated end time: HH.MM</p>
+            <form onSubmit={onRefresh1}>
+              <button>
+                <GrRotateRight />
+              </button>
+            </form>
           </div>
         </div>
         <div class="toilet-card">
@@ -165,8 +145,12 @@ const Toilet = () => {
             <h3 class="toilet-room">ROOM 2</h3>
             <p class="empty-room">{status2}</p>
             {time2 && 'Begin Time:' + time2}
-            {/* <p class="time-display">{time2}</p> */}
             <p class="estimatetime-display">Estimated end time: HH.MM</p>
+            <form onSubmit={onRefresh2}>
+              <button>
+                <GrRotateRight />
+              </button>
+            </form>
           </div>
         </div>
         <div class="toilet-card">
@@ -179,11 +163,12 @@ const Toilet = () => {
             <h3 class="toilet-room">ROOM 3</h3>
             <p class="time-display">{status3}</p>
             {time3 && 'Begin Time:' + time3}
-            <form onSubmit={onRefresh1}>
-              <button>button1 </button>
-            </form>
-            {/* <p class="time-display">{time3}</p> */}
             <p class="estimatetime-display">Estimated end time: HH.MM</p>
+            <form onSubmit={onRefresh3}>
+              <button>
+                <GrRotateRight />
+              </button>
+            </form>
           </div>
         </div>
       </div>
