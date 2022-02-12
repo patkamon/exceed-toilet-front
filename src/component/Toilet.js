@@ -163,9 +163,12 @@ const Toilet = () => {
 
       <h1>TOILET</h1>
 
-      {/* <h1>Average estimated time: HH:MM</h1> */}
-      <div class="toilet-list">
-        <div class="toilet-card">
+
+
+  {/* <h1>Average estimated time: HH:MM</h1> */}
+  <div class="toilet-list">
+      
+  <div class="toilet-card">
           <div class="card-header"></div>
           <div class="card-body">
             <img
@@ -176,16 +179,21 @@ const Toilet = () => {
             <p class="time-display">{status1}</p>
             {time1 && 'Begin Time:' + time1}
             {time1 && 'Estimate Time:' + time3 + ' + ' + parseInt(es) + ' second'} 
-            <form onSubmit={onRefresh1}>
+            
+
+          </div>
+        </div>
+        <form onSubmit={onRefresh1}>
               <button>
                 <GrRotateRight />
               </button>
             </form>
-          </div>
-        </div>
+
+
         <div class="toilet-card">
           <div class="card-header"></div>
           <div class="card-body">
+
             <img
               src="https://cdn.discordapp.com/attachments/941214299160993822/941954703284113408/toilet-7.png"
               alt="image"
@@ -199,11 +207,13 @@ const Toilet = () => {
                 <GrRotateRight />
               </button>
             </form>
+
           </div>
         </div>
         <div class="toilet-card">
           <div class="card-header"></div>
           <div class="card-body">
+
             <img
               src="https://cdn.discordapp.com/attachments/941214299160993822/941954703003123742/toilet-6.png"
               alt="image"
@@ -217,6 +227,7 @@ const Toilet = () => {
                 <GrRotateRight />
               </button>
             </form>
+
           </div>
         </div>
       </div>
